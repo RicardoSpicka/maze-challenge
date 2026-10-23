@@ -635,7 +635,7 @@ const handlePointerMove = (
               </a>
 
               <a
-                href="https://knight-tour.vercel.app/"
+                href="https://knight-tour-beta.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
