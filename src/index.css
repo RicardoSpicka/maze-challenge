@@ -1,0 +1,22 @@
+ :root {
+  font-family: 'Manrope', sans-serif;
+  color: #eef4ed;
+  background: #0c100e;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+}
+* { box-sizing: border-box; }
+html { min-width: 320px; min-height: 100%; background: #0c100e; }
+body { margin: 0; min-width: 320px; min-height: 100vh; min-height: 100dvh; font-size: 1rem; line-height: 1.5; }
+button, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent, #b8f36b); outline-offset: 3px; }
+button:disabled { cursor: not-allowed; }
+button, a { -webkit-tap-highlight-color: transparent; }
+#root { min-height: 100vh; min-height: 100dvh; background: #0c100e; }
+::selection { background: #b8f36b; color: #17220f; }
