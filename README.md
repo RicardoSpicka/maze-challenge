@@ -13,7 +13,7 @@ Explore os corredores, encontre o caminho até a saída e tente concluir o desaf
 ## 🎮 Funcionalidades
 
 - **Labirintos dinâmicos:** geração procedural de novos percursos.
-- **Múltiplos tamanhos:** tabuleiros de 10×10, 15×15 e 20×20.
+- **Múltiplos tamanhos:** tabuleiros de 14x14, 18x18 e 22x22.
 - **Níveis de dificuldade:** fácil, médio e difícil.
 - **Movimentação interativa:** controle por teclado ou arraste do jogador pelo labirinto.
 - **Caminho iluminado:** acompanhe visualmente o trajeto percorrido.
