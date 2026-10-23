@@ -1,75 +1,34 @@
-# React + TypeScript + Vite
+# 🧩 MAZE CHALLENGE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### PUZZLELAB · DESAFIO DE LÓGICA
 
-Currently, two official plugins are available:
+**Encontre a saída. Um caminho. Mil possibilidades. Você consegue?**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O Maze Challenge é um jogo de labirinto interativo desenvolvido para desafiar a orientação espacial, o raciocínio lógico e a capacidade de planejamento do jogador.
 
-## React Compiler
+Explore os corredores, encontre o caminho até a saída e tente concluir o desafio com eficiência. Cada partida gera um novo labirinto, trazendo uma experiência diferente a cada tentativa.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎮 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Labirintos dinâmicos:** geração procedural de novos percursos.
+- **Múltiplos tamanhos:** tabuleiros de 10×10, 15×15 e 20×20.
+- **Níveis de dificuldade:** fácil, médio e difícil.
+- **Movimentação interativa:** controle por teclado ou arraste do jogador pelo labirinto.
+- **Caminho iluminado:** acompanhe visualmente o trajeto percorrido.
+- **Cronômetro:** acompanhe o tempo gasto para encontrar a saída.
+- **Contador de movimentos:** monitore seus movimentos durante a partida.
+- **Temas visuais:** sete opções de cores para personalizar a experiência.
+- **Modal de conclusão:** confira seu resultado ao chegar à saída.
+- **Interface responsiva:** experiência adaptada para computadores, tablets e smartphones.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🕹️ Como jogar
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Escolha o tamanho do labirinto e o nível de dificuldade.
+2. Inicie uma nova partida.
+3. Mova o jogador pelo caminho disponível usando o teclado ou arrastando-o com o mouse ou toque.
+4. Evite as paredes e planeje seu percurso.
+5. Alcance a saída para concluir o desafio.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+**Objetivo:** encontrar a saída do labirinto, utilizando
